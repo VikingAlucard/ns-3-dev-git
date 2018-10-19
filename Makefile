@@ -5,8 +5,7 @@ all:
 
 # free free to change this part to suit your requirements
 configure:
-	./waf configure --enable-examples --enable-tests
-
+	./waf configure --enable-tests --enable-examples --with-pybindgen=../pybindgen --enable-mpi
 build:
 	./waf build
 
